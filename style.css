@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(8, 8, 10);
+}
+
+.header {
+  background-color: rgb(180, 20, 42);
+  color: white;
+}
+
+nav {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main {
+  color: white;
+}
+
+.photo {
+  height: 300px;
+}
+
+.footer {
+  color: white;
+}
