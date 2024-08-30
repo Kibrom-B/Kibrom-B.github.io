@@ -9,102 +9,139 @@
   </head>
   <body>
     <header>
-      <div class="header">
-        <nav>
-          <h1>Kibrom Berhane</h1>
-          <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-me">Contact Me </a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <h1>Kibrom Berhane</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
+          <li><a href="#about-me" class="active">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <!-- <li><a href="#experience">Experience</a></li> -->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="container">
-        <section id="about-me">
+        <section id="about-me" class="section">
           <img class="photo" src="img/Pic.png" alt="Picture of me" />
           <article id="bio">
             <h2>About Me</h2>
             <hr />
             <p>
-              My name is Kibrom Berhane , I am a student currently pursuing my
-              study of Software development at WeCanCodeIT and this is my first
-              project. My passions revolve around technology, aircraft and car
-              engineering, which have captivated my interest since childhood. My
-              goal is to actively contribute to technology projects innovation
-              within the field of aircraft and car technology.
+              My name is Kibrom Berhane, a dedicated software engineer
+              passionate about crafting robust solutions and driving innovation.
+              I have a strong foundation in both frontend and backend
+              technologies, including JavaScript, React.js, and Node.js. As a
+              full-stack developer, I am eager to apply my skills and knowledge
+              to real-world projects and contribute to impactful solutions
+              across the entire development stack.
+            </p>
+            <p>
+              I am deeply passionate about leveraging technology to solve
+              real-world challenges, particularly in areas like automotive and
+              aerospace engineering. My enthusiasm for software engineering
+              extends beyond work, as I enjoy exploring new advancements in
+              vehicle and aircraft systems and contributing to innovative
+              projects in these fields.
+            </p>
+            <p>
+              Looking ahead, I am eager to continue honing my skills in frontend
+              and backend development, with a focus on building intuitive user
+              interfaces and optimizing application performance. I am excited
+              about opportunities that allow me to innovate, collaborate with
+              talented teams, and contribute to impactful projects.
             </p>
             <div id="contact">
-              <ul>
-                <h3>Contact:</h3>
-                <a href="https://github.com/Kibrom-B" target="_blank">
-                  <img
-                    class="github-logo"
-                    src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                    alt="github_logo"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/kibrom-berhane-98b471278/g"
-                  target="_blank"
-                >
-                  <img
-                    class="linkedin-logo"
-                    src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
-                    alt="linkedin-logo"
-                  />
-                </a>
-              </ul>
+              <h3>Contact:</h3>
+              <a href="https://github.com/Kibrom-B" target="_blank">
+                <img
+                  class="github-logo"
+                  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                  alt="GitHub Logo"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/kibromb" target="_blank">
+                <img
+                  class="linkedin-logo"
+                  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+                  alt="LinkedIn Logo"
+                />
+              </a>
             </div>
           </article>
         </section>
-        <section id="projects">
-          <h2>Projects</h2>
-          <article id="project1">
-            <a href="https://github.com/WeCanCodeIT/css-practice-Kibrom-B">
-              <img src="img/code.jpg" alt="random code" />
-            </a>
-            <ul>
-              <h1>CSS Practice</h1>
-            </ul>
-          </article>
-          <article id="project2">
-            <a href="">
-              <img src="img/Coming-soon.jpg" alt="Coming-soon on blackboard"
-            /></a>
-            <ul>
-              <h1>Future Project</h1>
-            </ul>
-          </article>
-        </section>
-        <section id="contact-me">
-          <h2>Contact Me</h2>
-          <hr />
+        <section id="skills" class="section">
+          <h2>Skills</h2>
           <ul>
-            <a href="https://github.com/Kibrom-B" target="_blank">
-              <img
-                class="github-logo"
-                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                alt="github_logo"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/kibrom-berhane-98b471278/g"
-              target="_blank"
-            >
-              <img
-                class="linkedin-logo"
-                src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
-                alt="linkedin-logo"
-              />
-            </a>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Java</li>
+            <li>SQL and NoSQL Databases</li>
+            <li>RESTful APIs</li>
+            <li>Git and Version Control</li>
           </ul>
+        </section>
+
+        <section id="projects" class="section">
+          <h2>Projects</h2>
+          <div>
+            <div class="project">
+              <img src="img/LSlogo.png" alt="Project 2" />
+              <h3>Labor Swap</h3>
+              <p>The Labor Swap application is a platform designed to facilitate the exchange of labor and services among users. 
+                The application allows individuals to post tasks they need help with and offer their skills or services in return. 
+                Users can browse available tasks, connect with others who have the skills they need, and arrange mutually beneficial labor exchanges.</p>
+              <a class="view-project" href="#">View Project</a>
+            </div>
+            <div class="project">
+              <img src="img/project1.jpg" alt="Project 1" />
+              <h3>Bank Account Application</h3>
+              <p>The Bank Account Project is a simple banking application designed to manage customer accounts. 
+                It provides functionalities to create, update, delete, and retrieve accounts, as well as perform transactions such as withdrawals. 
+                The project is built using Spring Boot for the backend and React for the frontend.</p>
+              <a class="view-project" href="#">View Project</a>
+            </div>
+            
+            <div class="project">
+              <img src="img/bakery.png" alt="Project 3" />
+              <h3>Chrysta Bakery</h3>
+              <p>The Chrysta Bakery application is an online platform designed to showcase and sell baked goods from Chrysta Bakery. 
+                The application allows customers to browse the bakery's product catalog, place orders, and manage their accounts. 
+                Additionally, the application provides an admin interface for managing products, orders, and customer information.</p>
+              <a class="view-project" href="#">View Project</a>
+            </div>
+          </div>
+        </section>
+        <section id="contact-me" class="contact-form">
+          <h2>Contact Me</h2>
+          <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
         </section>
       </div>
     </main>
     <footer class="footer">
-      <p>&copy;2023 Kibrom B.</p>
+      <p>&copy; 2024 Kibrom B.</p>
     </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navbar").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
